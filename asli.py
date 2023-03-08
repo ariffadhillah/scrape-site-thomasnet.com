@@ -8,12 +8,12 @@ itemlinkdataSupplier = []
 
 headers = {
     'User-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.63',
-    'cookie':'PHPSESSID=bt3j5ihfdtu8b96o2b56vc58f5; tnet_sid=fe9c5993-10d3-4ef4-b51b-43a4ca757913; _ga=GA1.2.875644548.1678179744; _gid=GA1.2.616245202.1678179744; _gcl_au=1.1.1887114947.1678179745; ln_or=eyIxMjEwODkiOiJkIn0=; _fbp=fb.1.1678179746477.2092807830; __adroll_fpc=c656b51d401c13824e03676a966a5c8f-1678179747654; hubspotutk=655ed3494757d8383a456b37cc5aa858; QuantumMetricUserID=78fa5bcf32202bb249d709719d4d2faf; privacy_disclosure=true; tinid=229579193; refresh_token_cookie=v1.MYiQb6KN6UDZGNq5WmDWwX2lZIvJVHnnJk4jYhSI6WsVHFAgP6JSZfc8aDeg3TPcwBGyynHIays68KSEFf4REgw; UUID=229579193; _usrvst=6; _tnetses=640829040d626-48; tnetMode=suppliers; sitetab=supp; sitemode=supp; LS=/nsearch.html?cov=NA&what=digital&heading=85621126; comphd=85621126; compcov=NA; slsb=; tnetsearch=; _gat_tealium_0=1; amp_4b1323=AqQmNtFqFip3mlj_VT0RmX.MjI5NTc5MTkz..1gqvu0mk2.1gqvu0mn4.0.56.56; _uetsid=c770ac50bcc611ed864705673e739b77; _uetvid=c7713990bcc611ed83d42d526fc0209c; __ar_v4=22GNI4SB75HHRGB3B3KOOG:20230306:167|TMTAKRB6LBBSVK3AQQGICC:20230306:167|KJ5TD77QTZBR7EEU7K2NHB:20230306:164|IL2VZMDA4VFJNJQGZKZOG5:20230306:2; QuantumMetricSessionID=7e3d1e82321271726545891f90cb0b9c; __hstc=193920946.655ed3494757d8383a456b37cc5aa858.1678179756850.1678245740062.1678256398951.12; __hssrc=1; __hssc=193920946.1.1678256398951; amp_4b1323_thomasnet.com=AqQmNtFqFip3mlj_VT0RmX.MjI5NTc5MTkz..1gqvu0mpm.1gqvu0vit.nc.nr.1f7; utag_main=v_id:0186bb4ea84e0032058b6381439405081001a0790086e$_sn:8$_ss:0$_st:1678258206068$dc_visit:8$ses_id:1678256391909;exp-session$_pn:1;exp-session$dc_event:6;exp-session$dc_region:ap-east-1;exp-session'
+    'cookie':'PHPSESSID=bt3j5ihfdtu8b96o2b56vc58f5; tnet_sid=fe9c5993-10d3-4ef4-b51b-43a4ca757913; _ga=GA1.2.875644548.1678179744; _gid=GA1.2.616245202.1678179744; _gcl_au=1.1.1887114947.1678179745; _fbp=fb.1.1678179746477.2092807830; __adroll_fpc=c656b51d401c13824e03676a966a5c8f-1678179747654; hubspotutk=655ed3494757d8383a456b37cc5aa858; QuantumMetricUserID=78fa5bcf32202bb249d709719d4d2faf; privacy_disclosure=true; tinid=229579193; refresh_token_cookie=v1.MYiQb6KN6UDZGNq5WmDWwX2lZIvJVHnnJk4jYhSI6WsVHFAgP6JSZfc8aDeg3TPcwBGyynHIays68KSEFf4REgw; UUID=229579193; ln_or=eyIxMjEwODkiOiJkIn0=; QuantumMetricSessionID=551e442b50a1332a6ab4b27a8a777184; _usrvst=7; _tnetses=64087fa0c59cf-20; tnetMode=suppliers; sitetab=supp; sitemode=supp; comphd=40451205; compcov=NA; slsb=; tnetsearch=; LS=/nsearch.html?cov=NA&heading=40451205&what=digital&pg=12; amp_4b1323=AqQmNtFqFip3mlj_VT0RmX.MjI5NTc5MTkz..1gqvu0mk2.1gr0j5j46.0.9i.9i; _uetsid=c770ac50bcc611ed864705673e739b77; _uetvid=c7713990bcc611ed83d42d526fc0209c; __ar_v4=22GNI4SB75HHRGB3B3KOOG:20230306:301|TMTAKRB6LBBSVK3AQQGICC:20230306:301|KJ5TD77QTZBR7EEU7K2NHB:20230306:293|IL2VZMDA4VFJNJQGZKZOG5:20230306:7; __hstc=193920946.655ed3494757d8383a456b37cc5aa858.1678179756850.1678256398951.1678278582544.13; __hssrc=1; __hssc=193920946.1.1678278582544; _gat_tealium_0=1; amp_4b1323_thomasnet.com=AqQmNtFqFip3mlj_VT0RmX.MjI5NTc5MTkz..1gqvu0mpm.1gr0j7tcc.1l7.1m2.3b9; utag_main=v_id:0186bb4ea84e0032058b6381439405081001a0790086e$_sn:8$_ss:0$_st:1678280453258$dc_visit:8$ses_id:1678256391909;exp-session$_pn:142;exp-session$dc_event:1115;exp-session$dc_region:ap-east-1;exp-session'
 }
 
 # res = requests.get(url, headers=headers).text
-for page in range(1,20):
-    r = requests.get(f'https://www.thomasnet.com/nsearch.html?cov=NA&heading=18311506&what=digital&pg={page}')
+for page in range(1,50):
+    r = requests.get(f'https://www.thomasnet.com/nsearch.html?cov=NA&heading=53262903&what=digital&pg={page}')
     # r = requests.get(f'https://www.thomasnet.com/nsearch.html?cov=NA&what=digital&heading=3180106')
     soup = BeautifulSoup(r.content, 'lxml')
     dataSupplier = soup.find_all('h2', class_='profile-card__title')
@@ -28,11 +28,24 @@ for link in itemlinkdataSupplier:
     r = requests.get(link, headers=headers)
 
     soup = BeautifulSoup(r.content, 'lxml')
-    element_company_name = soup.find('h1', {'class': 'copro-supplier-name'})
+    
+    h1 = soup.find("h1", {"class": "copro-supplier-name"})
+    
     try:
-        company_name = element_company_name.find('a').text.strip()
+        div_to_remove = h1.find("div", {"id": "copro-supplier-main-badges-container"})
+        div_to_remove.decompose()
+        company_name = h1.get_text(strip=True)
+
     except:
+        div_to_remove =''   
         company_name =''
+
+    
+    # element_company_name = soup.find('h1', {'class': 'copro-supplier-main-badges-container'})
+    # try:
+    #     company_name = element_company_name.find('a').text.strip()
+    # except:
+    #     company_name =''
     # phone_number = soup.find('p', class_='phoneline').text.strip().replace('ico-phone', '').replace('ico-website', '').replace('Visit Website', '').replace('•', '').replace(' Call Supplier', '').replace('Request Information', '').replace('ico-contact', '')
 
     number = soup.find('p', class_='phoneline')
@@ -126,5 +139,5 @@ for link in itemlinkdataSupplier:
 # print(df.head(15))
 
 df = pd.DataFrame(companylist, columns=['Company name', 'Phone number', 'website (Homepage)','Location', 'Company type', 'Company Description by Thomasnet','Company Description by the company', 'Linkedin URL','Annual Sales:', 'No of Employees:' , 'MANUFACTURING SERVICES', 'ALL PRODUCTS / SERVICES' ])
-# df.to_csv('Digital Encoders.csv', index=False)
-df.to_csv('Digital Controls.csv', index=False)
+
+df.to_csv('16 Digital Multimeters.csv', index=False)
