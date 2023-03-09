@@ -12,8 +12,8 @@ headers = {
 }
 
 # res = requests.get(url, headers=headers).text
-for page in range(1,100):
-    r = requests.get(f'https://www.thomasnet.com/nsearch.html?cov=NA&heading=17873050&what=electronic&pg=1')
+for page in range(1,80):
+    r = requests.get(f'')
     # r = requests.get(f'https://www.thomasnet.com/nsearch.html?cov=NA&what=digital&heading=3180106')
     soup = BeautifulSoup(r.content, 'lxml')
     dataSupplier = soup.find_all('h2', class_='profile-card__title')
@@ -137,6 +137,4 @@ for link in itemlinkdataSupplier:
 
 df = pd.DataFrame(companylist, columns=['Company name', 'Phone number', 'website (Homepage)','Location', 'Company type', 'Company Description by Thomasnet','Company Description by the company', 'Linkedin URL','Annual Sales:', 'No of Employees:' , 'MANUFACTURING SERVICES', 'ALL PRODUCTS / SERVICES' ])
 
-df.to_csv('Electronic Contract Manufacturing.csv', index=False)
-
-# belum perisaa
+df.to_csv('Access control systems.csv', index=False)
